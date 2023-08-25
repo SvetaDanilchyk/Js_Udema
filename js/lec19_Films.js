@@ -88,7 +88,7 @@ detectPersonalLevel();
 
 function rememberMyFilms() {
     for(let i = 0; i < 2; i++) {
-        const lastFilm = prompt('Один из последних просмотренных фильмов?', '');  
+        const lastFilm = prompt('Один из последних просмотренных фильмов?', '').trim();  
         const FilmScore = +prompt('На сколько оцените его?', '');
        
         if(lastFilm != null && FilmScore != null  && lastFilm != '' && FilmScore != '' && lastFilm.length < 50) {
